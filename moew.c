@@ -1,4 +1,5 @@
 #include <stdio.h>
+// #include <bool.h>
 
 main(void)
 {
@@ -28,5 +29,11 @@ main(void)
     {
         printf("meow\n");
     }; 
+    while (1)
+    {
+        printf("meow\n");   
+    }
+    
+
 }
     
