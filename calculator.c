@@ -27,4 +27,5 @@ int main(void)
     printf("%f\n", (float) x / (float) y);
     
     return 0;
+    
 }
