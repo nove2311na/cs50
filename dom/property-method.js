@@ -33,4 +33,7 @@ pList.forEach(item => {
     item.removeAttribute("style");
 });
 
-// 4. hasAttribute("attributeName"): dựa vào node được select --> selector.hasAttribute("attributeName")
+// 4. hasAttribute("attributeName"): dựa vào node được select --> selector.hasAttribute("attributeName") --> có trả về true, không có trả về false --> kiểm tra điều kiện để xác định hướng xử lý
+
+console.log(link.hasAttribute("href"));
+console.log(link.hasAttribute("id"));
