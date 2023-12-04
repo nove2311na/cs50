@@ -19,10 +19,16 @@ console.log(singleNode4);
 const multiNode = document.querySelectorAll(".item");
 console.log(multiNode);
 
-// 2.3. document.getElementsByClassName() --> trả về 1 HTMLCollection
+// 2.3. document.getElementsByClassName() --> trả về 1 HTMLCollection hoặc empty HTMLCollection
 const classNode = document.getElementsByClassName("header");
 console.log(classNode);
 
-// 2.4. document.getElementById()
-// 2.5. document.getElementsByTagName()
-// 2.6. document.getElementsByName()
+// 2.4. document.getElementsByTagName() --> trả về 1 HTMLCollection hoặc empty HTMLCollection
+const tagNode = document.getElementsByTagName("li");
+console.log(tagNode);
+
+// 2.5. document.getElementById() --> trả về 1 node hoặc null
+const idNode = document.getElementById("spinner");
+console.log(idNode);
+
+// hay dùng: document.querySelector(), document.querySelectorAll()
