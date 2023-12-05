@@ -1,0 +1,90 @@
+/* Modal */
+
+* {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.25);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease-in-out;
+}
+
+.modal.is-show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: #999;
+}
+
+.modal-desc {
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.modal-action {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 20px;
+}
+
+.modal-action button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+}
+
+.modal-submit,
+.modal-cancel {
+    border: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #999;
+}
+
+.modal-submit {
+    color: #fff;
+    background-color: #3d6ef7;
+}
