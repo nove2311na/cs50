@@ -16,23 +16,44 @@
 // divElement.innerHTML = '<div class="content">Hi mọi người</div>';
 // divElement.setAttribute('class', 'content');
 
-// Khởi tạo card
-const card = document.createElement('div');
+// Bài tập
+// gán node body vào biến body
+const body = document.body;
 
-// Set attribute cho card
-card.classList.add('card');
-card.innerHTML = '<h1>card</h1>';
+// // tạo biến card
+// const card = document.createElement('div');
 
-// Xuất bản card
-document.body.appendChild(card);
+// // set thuộc tính, định danh, nội dung cho card
+// card.classList.add('card');
+// card.innerHTML = '<h1>card</h1>';
+// card.style.width = '300px';
 
-// Khởi tạo cardImage
-const cardImage = document.createElement('img');
+// // appendChild card vào body
+// body.appendChild(card);
 
-// Set attribute cho cardImage
-cardImage.setAttribute('src', 'https://source.unsplash.com/random/300x300');
-cardImage.setAttribute('alt', 'random image');
-cardImage.classList.add('card-image');
+// // tạo biến cardImage
+// const cardImage = document.createElement('img');
 
-// Xuất bản cardImage
-card.appendChild(cardImage);
+// // set thuộc tính, định danh, nội dung cho cardImage
+// cardImage.classList.add('card-image');
+// cardImage.setAttribute('src', 'https://source.unsplash.com/random/300x300');
+
+// // appendChild cardImage vào card
+// card.appendChild(cardImage);
+
+// 4. document.createTextNode
+const text = document.createTextNode('Hello World');
+const h1 = document.createElement('h1');
+body.appendChild(h1);
+h1.appendChild(text);
+
+// tạo element --> tạo textnode --> đưa textnode vào element --> hiển thị theo element nhưng text content của textnode
+
+// 5. cloneNode
+// const textClone = text.cloneNode();
+const h1Clone = h1.cloneNode(true);
+// h1Clone.appendChild(textClone);
+body.appendChild(h1Clone);
+
+// 6. hasChildNodes: check điều kiện
+console.log(h1.hasChildNodes());
